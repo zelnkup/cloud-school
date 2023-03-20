@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "drf_yasg",
 ] + LOCAL_APPS
 
 MIDDLEWARE = [
@@ -95,3 +96,6 @@ STATIC_URL = "static/"
 
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+UNIQUE_HASH_LENGTH = env.int("UNIQUE_HASH_LENGTH")
+DOMAIN = env.str("DOMAIN")
