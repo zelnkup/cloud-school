@@ -1,0 +1,6 @@
+Django
+django-environ
+djangorestframework
+pytest
+psycopg2
+drf_yasg
